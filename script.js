@@ -12,6 +12,7 @@ const closeIcon1 = document.querySelector('.computer-1__close-icon');
 const closeIcon2 = document.querySelector('.computer-2__close-icon');
 const closeIcon3 = document.querySelector('.computer-3__close-icon');
 
+
 const computer1List = document.getElementById('computer-1');
 const computer2List = document.getElementById('computer-2');
 const computer3List = document.getElementById('computer-3');
@@ -19,6 +20,24 @@ const computer3List = document.getElementById('computer-3');
 const subjectBox1 = document.querySelector('.subject__box-1');
 const subjectBox2 = document.querySelector('.subject__box-2');
 const subjectBox3 = document.querySelector('.subject__box-3');
+
+
+
+
+// Practical close icons
+const closeIcon4 = document.querySelector('.practical-1__close-icon');
+const closeIcon5 = document.querySelector('.practical-2__close-icon');
+const closeIcon6 = document.querySelector('.practical-3__close-icon');
+
+const practical1List = document.getElementById('practical-1');
+const practical2List = document.getElementById('practical-2');
+const practical3List = document.getElementById('practical-3');
+
+const practicalBox1 = document.querySelector('.practical__box-1');
+const practicalBox2 = document.querySelector('.practical__box-2');
+const practicalBox3 = document.querySelector('.practical__box-3');
+
+
 
 
 
@@ -55,14 +74,48 @@ subjectBox3.addEventListener('click', () => {
 });
 
 
-closeIcon1.addEventListener('click', (e) => {
+closeIcon1.addEventListener('click', () => {
 	computer1List.classList.toggle('show-menu');
 });
 
-closeIcon2.addEventListener('click', (e) => {
+closeIcon2.addEventListener('click', () => {
 	computer2List.classList.toggle('show-menu');
 });
 
-closeIcon3.addEventListener('click', (e) => {
+closeIcon3.addEventListener('click', () => {
 	computer3List.classList.toggle('show-menu');
 });
+
+
+
+practicalBox1.addEventListener('click', () => {
+	practical1List.classList.toggle('show-menu');
+});
+
+practicalBox2.addEventListener('click', () => {
+	practical2List.classList.toggle('show-menu');
+});
+
+practicalBox3.addEventListener('click', () => {
+	practical3List.classList.toggle('show-menu');
+});
+
+
+
+
+closeIcon4.addEventListener('click', () => {
+	// console.log(e.target);
+	practical1List.classList.toggle('show-menu');
+});
+
+closeIcon5.addEventListener('click', () => {
+	// console.log(e.target);
+	practical2List.classList.toggle('show-menu');
+});
+
+closeIcon6.addEventListener('click', () => {
+	// console.log(e.target);
+	practical3List.classList.toggle('show-menu');
+});
+
+//Is this Correct?

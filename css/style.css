@@ -82,7 +82,8 @@ h1, h2, h3, h4, h5, h6 {
         @media only screen and (max-width: 800px) {
           .navbar .navbar__link .navbar__link-items .navbar__link-item:not(:last-child) {
             margin-right: 0;
-            margin: 1rem 0; } }
+            margin: 1rem 0;
+            border: none; } }
         .navbar .navbar__link .navbar__link-items .navbar__link-item:not(:last-child):hover {
           border-bottom: 2px solid #ff393a; }
           @media only screen and (max-width: 800px) {
@@ -197,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
       padding: 3rem 4rem 3rem 4rem; } }
   .subject__title {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     font-size: 3rem;
     color: #ff393a;
     align-self: center; }
@@ -288,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .computer-1 {
   width: 80%;
-  height: 80vh;
+  height: 90vh;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -296,7 +297,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   background: #fafafa;
   border-radius: 8px;
   padding: 0 5rem;
@@ -306,6 +307,7 @@ h1, h2, h3, h4, h5, h6 {
     .computer-1 {
       width: 100%;
       height: 100%;
+      overflow: scroll;
       padding: 0 2.5rem;
       justify-content: flex-start; } }
   .computer-1.show-menu {
@@ -313,6 +315,7 @@ h1, h2, h3, h4, h5, h6 {
   .computer-1 > * {
     width: 100%;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between; }
     @media only screen and (max-width: 800px) {
       .computer-1 > * {
@@ -321,13 +324,25 @@ h1, h2, h3, h4, h5, h6 {
   .computer-1__title {
     width: auto;
     font-size: 2rem;
-    color: #ff393a; }
+    color: #ff393a;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem; }
+    .computer-1__title.practical-1__title {
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
     @media only screen and (max-width: 800px) {
       .computer-1__title {
         font-size: 1rem;
-        margin-top: 1rem; } }
+        margin-top: 1rem;
+        margin-bottom: 0; } }
+  .computer-1__practical-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .computer-1__practical-3 > *:not(:last-child) {
+      margin-right: 2rem; }
   .computer-1__row-1 {
-    margin-bottom: 4rem; }
+    margin-bottom: 2rem; }
     @media only screen and (max-width: 800px) {
       .computer-1__row-1 {
         margin-bottom: 2rem;
@@ -360,9 +375,16 @@ h1, h2, h3, h4, h5, h6 {
         transform: translateY(-0.3rem); }
   .computer-1__box {
     width: 40%;
-    padding: 0 1rem;
+    padding: 0 2rem;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+    .computer-1__box-practical {
+      flex-direction: column;
+      width: auto;
+      margin-top: -1rem; }
+      @media only screen and (max-width: 800px) {
+        .computer-1__box-practical {
+          margin-bottom: 5rem; } }
     @media only screen and (max-width: 800px) {
       .computer-1__box {
         width: 100%; } }
@@ -388,6 +410,8 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 1.3rem;
       padding: 1rem 0;
       color: #666; }
+      .computer-1__box--detail-practical {
+        flex-direction: column; }
       .computer-1__box--detail i {
         margin-right: .4rem;
         color: #ff393a; }
@@ -502,6 +526,231 @@ h1, h2, h3, h4, h5, h6 {
         color: #ff393a;
         margin-right: .3rem; }
     .practical__box:hover .practical__box--content {
+      height: 20%;
+      opacity: 1; }
+
+.practical-1 {
+  width: 80%;
+  height: 90vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 0 5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 200; }
+  @media only screen and (max-width: 800px) {
+    .practical-1 {
+      width: 100%;
+      height: 100%;
+      overflow: scroll;
+      padding: 0 2.5rem;
+      justify-content: flex-start; } }
+  .practical-1.show-menu {
+    display: flex; }
+  .practical-1 > * {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; }
+    @media only screen and (max-width: 800px) {
+      .practical-1 > * {
+        flex-direction: column;
+        align-items: center; } }
+  .practical-1__title {
+    width: auto;
+    font-size: 2rem;
+    color: #ff393a;
+    margin-bottom: -8rem; }
+    @media only screen and (max-width: 800px) {
+      .practical-1__title {
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 0; } }
+  .practical-1__row-1 {
+    margin-bottom: -8rem; }
+    @media only screen and (max-width: 800px) {
+      .practical-1__row-1 {
+        margin-bottom: 2rem;
+        margin-top: 3rem; } }
+    .practical-1__row-1 > *:not(:last-child) {
+      margin-right: 4rem; }
+      @media only screen and (max-width: 800px) {
+        .practical-1__row-1 > *:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 2rem; } }
+    .practical-1__row-1 > * {
+      transition: all .3s; }
+      .practical-1__row-1 > *:hover {
+        transform: translateY(-0.3rem); }
+  .practical-1__row-2 {
+    justify-content: center;
+    width: 85%; }
+    @media only screen and (max-width: 800px) {
+      .practical-1__row-2 {
+        width: 100%; } }
+    .practical-1__row-2 > *:not(:last-child) {
+      margin-right: 4rem; }
+      @media only screen and (max-width: 800px) {
+        .practical-1__row-2 > *:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 2rem; } }
+    .practical-1__row-2 > * {
+      transition: all .3s; }
+      .practical-1__row-2 > *:hover {
+        transform: translateY(-0.3rem); }
+  .practical-1__box {
+    width: 40%;
+    padding: 0 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+    @media only screen and (max-width: 800px) {
+      .practical-1__box {
+        width: 100%; } }
+    .practical-1__box--title {
+      border-bottom: 1px solid #ccc; }
+      .practical-1__box--title h1 {
+        font-size: 1.8rem;
+        font-family: 'Open Sans', sans-serif !important;
+        font-weight: 400 !important;
+        line-height: 1.2;
+        margin: .7rem 0;
+        color: #ff393a; }
+        @media only screen and (max-width: 800px) {
+          .practical-1__box--title h1 {
+            font-size: 1.2rem; } }
+      .practical-1__box--title p {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        color: #444; }
+    .practical-1__box--detail {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.3rem;
+      padding: 1rem 0;
+      color: #666; }
+      .practical-1__box--detail-practical {
+        flex-direction: column; }
+      .practical-1__box--detail i {
+        margin-right: .4rem;
+        color: #ff393a; }
+
+.practical-1__close-icon {
+  width: auto;
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  font-size: 3rem;
+  color: #ff393a;
+  cursor: pointer; }
+
+.timetable {
+  width: 100%;
+  padding: 5rem 10rem 7rem 10rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  background: #eee; }
+  @media only screen and (max-width: 800px) {
+    .timetable {
+      padding: 3rem 4rem; } }
+  .timetable__title {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    color: #ff393a;
+    align-self: center; }
+    .timetable__title h1 {
+      cursor: pointer;
+      color: #ff393a;
+      transition: all .1s; }
+      .timetable__title h1:hover {
+        transform: scale(103%) translateY(-0.2rem);
+        text-shadow: 0 0.5rem 1rem rgba(255, 57, 58, 0.1); }
+  .timetable__years {
+    display: flex; }
+    @media only screen and (max-width: 800px) {
+      .timetable__years {
+        flex-direction: column; } }
+    .timetable__years > *:not(:last-child) {
+      margin-right: 8rem; }
+      @media only screen and (max-width: 800px) {
+        .timetable__years > *:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 4rem; } }
+    .timetable__years > * {
+      cursor: pointer;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+      border-radius: 6px;
+      transition: all .4s; }
+      .timetable__years > *:hover, .timetable__years > *:active {
+        transform: translateY(-0.4rem) scale(100.5%);
+        box-shadow: 0 4px 10px -3px rgba(0, 0, 0, 0.5); }
+  .timetable__box {
+    width: 100%;
+    height: 25rem;
+    background: #fafafa;
+    overflow: hidden; }
+    .timetable__box--image {
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      position: relative;
+      transition: all .2s; }
+      @media only screen and (max-width: 800px) {
+        .timetable__box--image {
+          height: 80%; } }
+      .timetable__box--image h1 {
+        background: #fafafa;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 0 1rem;
+        font-size: 3rem;
+        color: #ff393a;
+        border-top-left-radius: 8px; }
+    .timetable__box:hover .timetable__box--image {
+      height: 80%; }
+    .timetable__box--image-1 {
+      background: linear-gradient(to right bottom, rgba(255, 165, 0, 0.1), rgba(255, 165, 0, 0.1)), linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/timetable-1.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .timetable__box--image-2 {
+      background: linear-gradient(to right bottom, rgba(255, 165, 0, 0.1), rgba(255, 165, 0, 0.1)), linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/timetable-2.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .timetable__box--image-3 {
+      background: linear-gradient(to right bottom, rgba(255, 165, 0, 0.1), rgba(255, 165, 0, 0.1)), linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/timetable-3.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .timetable__box--content {
+      width: 100%;
+      opacity: 0;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      @media only screen and (max-width: 800px) {
+        .timetable__box--content {
+          height: 20%;
+          opacity: 1; } }
+      .timetable__box--content p i {
+        text-align: center;
+        color: #ff393a;
+        margin-right: .3rem; }
+    .timetable__box:hover .timetable__box--content {
       height: 20%;
       opacity: 1; }
 
