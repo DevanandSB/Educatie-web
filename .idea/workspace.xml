@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a4ba97b-1403-41a8-a361-c8e6dce4a00a" name="Default Changelist" comment="" />
+    <list default="true" id="4a4ba97b-1403-41a8-a361-c8e6dce4a00a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/timetable-1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/timetable-2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/timetable-3.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,12 +19,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jfl2ni8zBce0COygsPMm60lq4y" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -35,13 +43,32 @@
       <option name="presentableId" value="Default" />
       <updated>1604202822120</updated>
       <workItem from="1604202823209" duration="292000" />
+      <workItem from="1604582747097" duration="6577000" />
+      <workItem from="1604589424233" duration="209000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated UI">
+      <created>1604582936363</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604582936363</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Updated UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated UI" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="285" y="0" width="787" height="768" key="CommitChangelistDialog2" timestamp="1604582936071">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="285" y="0" width="787" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1604582936071" />
     <state x="551" y="272" width="264" height="235" key="Github.ShareDialog" timestamp="1604202978305">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -50,5 +77,13 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="517" y="0" width="324" height="768" key="Github.UntrackedFilesDialog/0.0.1366.768@0.0.1366.768" timestamp="1604203004805" />
+    <state x="278" y="117" width="802" height="545" key="Vcs.Push.Dialog.v2" timestamp="1604582987980">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="278" y="117" width="802" height="545" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1604582987980" />
+    <state x="346" y="84" width="672" height="683" key="search.everywhere.popup" timestamp="1604588461227">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="84" width="672" height="683" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1604588461227" />
   </component>
 </project>
