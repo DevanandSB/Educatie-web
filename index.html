@@ -31,6 +31,9 @@
 			<ul class="navbar__link-items hide-menu" id="menu-items">
 				<li class="navbar__link-item">
 				    <a href="#">Home</a>
+				</li>
+				<li class="navbar__link-item">
+				    <a href="#subject">Subjects</a>
 			    </li>
 				<li class="navbar__link-item">
 				    <a href="#practical">Syllabus</a>
@@ -52,7 +55,7 @@
 	<header class="header" id="header">
 		<h1 class="header__heading">NOBODY DOES IT <span>LIKE US</span></h1>
 		<button class="header__button">
-			<a class="header__button-text" href="#">Explore <i class="fas fa-long-arrow-alt-right"></i></a>
+			<a class="header__button-text" target="_blank" href="http://educatie.me/lms">Explore <i class="fas fa-long-arrow-alt-right"></i></a>
 		</button>
 	</header>
 
@@ -64,7 +67,7 @@
 			<h1>Subjects</h1>
 		</div>
 		
-		<div class="subject__years">
+		<div class="subject__years" id="subject__years">
 			<div class="subject__box subject__box-1">
 				<div class="subject__box--image subject__box--image-1">
 					<h1>Year-I</h1>
@@ -100,7 +103,7 @@
 	<!-- Subjects list -->
 
 	<div class="computer-1" id="computer-1">
-		<div class="computer-1__close-icon">
+		<div class="computer-1__close-icon close__icon">
 			<i class="fas fa-times"></i>
 		</div>
 
@@ -215,7 +218,7 @@
 
 
 	<div class="computer-1" id="computer-2">
-		<div class="computer-1__close-icon computer-2__close-icon">
+		<div class="computer-1__close-icon close__icon">
 			<i class="fas fa-times"></i>
 		</div>
 
@@ -328,7 +331,7 @@
 	</div>
 
 	<div class="computer-1" id="computer-3">
-		<div class="computer-1__close-icon computer-3__close-icon">
+		<div class="computer-1__close-icon close__icon">
 			<i class="fas fa-times"></i>
 		</div>
 
@@ -474,11 +477,7 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
-
-		
-
 	</div>
 
 	<!-- Practical -->
@@ -488,13 +487,13 @@
 			<h1>Syllabus</h1>
 		</div>
 		
-		<div class="practical__years">
+		<div class="practical__years" id="practical__years">
 			<div class="practical__box practical__box-1">
 				<div class="practical__box--image practical__box--image-1">
 					<h1>Year-I</h1>
 				</div>
 				<div class="practical__box--content">
-					<!-- <p><i class="far fa-clock"></i> 2 weeks</p> -->
+					
 					<p><i class="fas fa-book"></i> 5 Subject</p>
 				</div>
 			</div>
@@ -504,7 +503,7 @@
 					<h1>Year-II</h1>
 				</div>
 				<div class="practical__box--content">
-					<!-- <p><i class="far fa-clock"></i> 2 weeks</p> -->
+					
 					<p><i class="fas fa-book"></i> 5 Subject</p>
 				</div>
 			</div>
@@ -514,17 +513,18 @@
 					<h1>Year-III</h1>
 				</div>
 				<div class="practical__box--content">
-					<!-- <p><i class="far fa-clock"></i> 3 weeks</p> -->
+					
 					<p><i class="fas fa-book"></i> 5 Subjects</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<!-- Subject list Year 1-->
 
 	<div class="practical-1" id="practical-1">
 		
-		<div class="practical-1__close-icon">
+		<div class="practical-1__close-icon close__icon">
 			<i class="fas fa-times"></i>
 		</div>
 
@@ -533,7 +533,7 @@
 		</div>
 
 		<div class="practical-1__row-1">
-			<div class="practical-1__box">
+			<div class="practical-1__box practical-year-1 practical-1__box-1-1">
 				<div class="practical-1__box--title">
 					<h1>பொது தமிழ் - I</h1>
 					<p>Language Paper</p>
@@ -548,7 +548,7 @@
 				</div>
 			</div>
 
-			<div class="practical-1__box">
+			<div class="practical-1__box practical-year-1  practical-1__box-1-2">
 				<div class="practical-1__box--title">
 					<h1>English for Basic Communication</h1>
 					<p>Language Paper</p>
@@ -563,7 +563,7 @@
 				</div>
 			</div>
 
-			<div class="practical-1__box">
+			<div class="practical-1__box practical-year-1  practical-1__box-1-3">
 				<div class="practical-1__box--title">
 					<h1>Allied Mathematics - I</h1>
 					<p>Allied Paper</p>
@@ -580,7 +580,7 @@
 		</div>
 
 		<div class="practical-1__row-2">
-			<div class="practical-1__box">
+			<div class="practical-1__box practical-year-1  practical-1__box-1-4">
 				<div class="practical-1__box--title">
 					<h1>Digital practical Fundamentals</h1>
 					<p>Theory Paper</p>
@@ -595,7 +595,7 @@
 				</div>
 			</div>
 
-			<div class="practical-1__box">
+			<div class="practical-1__box practical-year-1  practical-1__box-1-5">
 				<div class="practical-1__box--title">
 					<h1>Web Designing Concepts</h1>
 					<p>Programming Paper</p>
@@ -613,11 +613,278 @@
 	</div>
 
 
+	<!-- Subjects Unit list for year 1 -->
+	<!-- Practical-unit-list.scss -->
 
+	<!-- Practical subject unit 1 -->
+	<div class="practical-1-subject-1" id="practical-1-subject-1">
+		
+		<div class="practical-1-subject-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="practical-1-subject-1__title">
+			<h1>Units</h1>
+		</div>
+
+		<div class="practical-1-subject-1__row-1">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-I</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-II</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-III</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="practical-1-subject-1__row-2">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-IV</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-V</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Practical subject unit 2 -->
+	<div class="practical-1-subject-1" id="practical-1-subject-2">
+		
+		<div class="practical-1-subject-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="practical-1-subject-1__title">
+			<h1>Units</h1>
+		</div>
+
+		<div class="practical-1-subject-1__row-1">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-I</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-II</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-III</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="practical-1-subject-1__row-2">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-IV</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-V</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Practical subject unit 3 -->
+	<div class="practical-1-subject-1" id="practical-1-subject-3">
+		
+		<div class="practical-1-subject-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="practical-1-subject-1__title">
+			<h1>Units</h1>
+		</div>
+
+		<div class="practical-1-subject-1__row-1">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-I</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-II</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-III</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="practical-1-subject-1__row-2">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-IV</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-V</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Practical subject unit 4 -->
+	<div class="practical-1-subject-1" id="practical-1-subject-4">
+		
+		<div class="practical-1-subject-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="practical-1-subject-1__title">
+			<h1>Units</h1>
+		</div>
+
+		<div class="practical-1-subject-1__row-1">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-I</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-II</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-III</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="practical-1-subject-1__row-2">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-IV</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-V</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- Practical subject unit 5 -->
+	<div class="practical-1-subject-1" id="practical-1-subject-5">
+		
+		<div class="practical-1-subject-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="practical-1-subject-1__title">
+			<h1>Units</h1>
+		</div>
+
+		<div class="practical-1-subject-1__row-1">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-I</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-II</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-III</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="practical-1-subject-1__row-2">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-IV</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-V</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- Subject List for Year 2 -->
 
 	<div class="practical-1" id="practical-2">
 		
-		<div class="practical-1__close-icon practical-2__close-icon">
+		<div class="practical-1__close-icon close__icon">
 			<i class="fas fa-times"></i>
 		</div>
 
@@ -626,7 +893,7 @@
 		</div>
 
 		<div class="practical-1__row-1">
-			<div class="practical-1__box">
+			<div class="practical-1__box practical-year-2  practical-1__box-2-1">
 				<div class="practical-1__box--title">
 					<h1>பொது தமிழ் - I</h1>
 					<p>Language Paper</p>
@@ -641,7 +908,7 @@
 				</div>
 			</div>
 
-			<div class="practical-1__box">
+			<div class="practical-1__box practical-year-2  practical-1__box-2-2">
 				<div class="practical-1__box--title">
 					<h1>English for Basic Communication</h1>
 					<p>Language Paper</p>
@@ -656,7 +923,7 @@
 				</div>
 			</div>
 
-			<div class="practical-1__box">
+			<div class="practical-1__box practical-year-2  practical-1__box-2-3">
 				<div class="practical-1__box--title">
 					<h1>Allied Mathematics - I</h1>
 					<p>Allied Paper</p>
@@ -673,7 +940,7 @@
 		</div>
 
 		<div class="practical-1__row-2">
-			<div class="practical-1__box">
+			<div class="practical-1__box practical-year-2  practical-1__box-2-4">
 				<div class="practical-1__box--title">
 					<h1>Digital practical Fundamentals</h1>
 					<p>Theory Paper</p>
@@ -688,7 +955,366 @@
 				</div>
 			</div>
 
-			<div class="practical-1__box">
+			<div class="practical-1__box practical-year-2  practical-1__box-2-5">
+				<div class="practical-1__box--title">
+					<h1>Web Designing Concepts</h1>
+					<p>Programming Paper</p>
+				</div>
+				<div class="practical-1__box--detail">
+					<div class="practical-1__box--detail-time">
+						<p><i class="far fa-clock"></i> 3 Hours</p>
+					</div>
+					<div class="practical-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mrs. A. Josephine Sagaya Mala</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Practical subject unit 1 -->
+	<div class="practical-1-subject-1" id="practical-2-subject-1">
+		
+		<div class="practical-1-subject-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="practical-1-subject-1__title">
+			<h1>Units</h1>
+		</div>
+
+		<div class="practical-1-subject-1__row-1">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-I</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-II</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-III</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="practical-1-subject-1__row-2">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-IV</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-V</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Practical subject unit 2 -->
+	<div class="practical-1-subject-1" id="practical-2-subject-2">
+		
+		<div class="practical-1-subject-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="practical-1-subject-1__title">
+			<h1>Units</h1>
+		</div>
+
+		<div class="practical-1-subject-1__row-1">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-I</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-II</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-III</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="practical-1-subject-1__row-2">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-IV</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-V</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Practical subject unit 3 -->
+	<div class="practical-1-subject-1" id="practical-2-subject-3">
+		
+		<div class="practical-1-subject-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="practical-1-subject-1__title">
+			<h1>Units</h1>
+		</div>
+
+		<div class="practical-1-subject-1__row-1">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-I</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-II</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-III</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="practical-1-subject-1__row-2">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-IV</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-V</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Practical subject unit 4 -->
+	<div class="practical-1-subject-1" id="practical-2-subject-4">
+		
+		<div class="practical-1-subject-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="practical-1-subject-1__title">
+			<h1>Units</h1>
+		</div>
+
+		<div class="practical-1-subject-1__row-1">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-I</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-II</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-III</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="practical-1-subject-1__row-2">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-IV</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-V</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- Practical subject unit 5 -->
+	<div class="practical-1-subject-1" id="practical-2-subject-5">
+		
+		<div class="practical-1-subject-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="practical-1-subject-1__title">
+			<h1>Units</h1>
+		</div>
+
+		<div class="practical-1-subject-1__row-1">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-I</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-II</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-III</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="practical-1-subject-1__row-2">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-IV</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-V</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<!-- Subject list for year 3 -->
+
+	<div class="practical-1" id="practical-3">
+		
+		<div class="practical-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="practical-1__title">
+			<h1>Subjects</h1>
+		</div>
+
+		<div class="practical-1__row-1">
+			<div class="practical-1__box practical-year-3  practical-1__box-3-1">
+				<div class="practical-1__box--title">
+					<h1>பொது தமிழ் - I</h1>
+					<p>Language Paper</p>
+				</div>
+				<div class="practical-1__box--detail">
+					<div class="practical-1__box--detail-time">
+						<p><i class="far fa-clock"></i> 3 Hours</p>
+					</div>
+					<div class="practical-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="practical-1__box practical-year-3  practical-1__box-3-2">
+				<div class="practical-1__box--title">
+					<h1>English for Basic Communication</h1>
+					<p>Language Paper</p>
+				</div>
+				<div class="practical-1__box--detail">
+					<div class="practical-1__box--detail-time">
+						<p><i class="far fa-clock"></i> 3 Hours</p>
+					</div>
+					<div class="practical-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. S. Prabakaran</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="practical-1__box practical-year-3  practical-1__box-3-3">
+				<div class="practical-1__box--title">
+					<h1>Allied Mathematics - I</h1>
+					<p>Allied Paper</p>
+				</div>
+				<div class="practical-1__box--detail">
+					<div class="practical-1__box--detail-time">
+						<p><i class="far fa-clock"></i> 3 Hours</p>
+					</div>
+					<div class="practical-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Miss. D. Saraswathi</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="practical-1__row-2">
+			<div class="practical-1__box practical-year-3  practical-1__box-3-4">
+				<div class="practical-1__box--title">
+					<h1>Digital practical Fundamentals</h1>
+					<p>Theory Paper</p>
+				</div>
+				<div class="practical-1__box--detail">
+					<div class="practical-1__box--detail-time">
+						<p><i class="far fa-clock"></i> 2 Hours</p>
+					</div>
+					<div class="practical-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. S. Mohanraj</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="practical-1__box practical-year-3  practical-1__box-3-5">
 				<div class="practical-1__box--title">
 					<h1>Web Designing Concepts</h1>
 					<p>Programming Paper</p>
@@ -707,91 +1333,263 @@
 
 
 
-	<div class="practical-1" id="practical-3">
+
+
+	<!-- Practical subject unit 1 -->
+	<div class="practical-1-subject-1" id="practical-3-subject-1">
 		
-		<div class="practical-1__close-icon practical-3__close-icon">
+		<div class="practical-1-subject-1__close-icon close__icon">
 			<i class="fas fa-times"></i>
 		</div>
 
-		<div class="practical-1__title">
-			<h1>Subjects</h1>
+		<div class="practical-1-subject-1__title">
+			<h1>Units</h1>
 		</div>
 
-		<div class="practical-1__row-1">
-			<div class="practical-1__box">
-				<div class="practical-1__box--title">
-					<h1>பொது தமிழ் - I</h1>
-					<p>Language Paper</p>
-				</div>
-				<div class="practical-1__box--detail">
-					<div class="practical-1__box--detail-time">
-						<p><i class="far fa-clock"></i> 3 Hours</p>
-					</div>
-					<div class="practical-1__box--detail-person">
-						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
-					</div>
+		<div class="practical-1-subject-1__row-1">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-I</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
 				</div>
 			</div>
 
-			<div class="practical-1__box">
-				<div class="practical-1__box--title">
-					<h1>English for Basic Communication</h1>
-					<p>Language Paper</p>
-				</div>
-				<div class="practical-1__box--detail">
-					<div class="practical-1__box--detail-time">
-						<p><i class="far fa-clock"></i> 3 Hours</p>
-					</div>
-					<div class="practical-1__box--detail-person">
-						<p><i class="fas fa-user"></i> Mr. S. Prabakaran</p>
-					</div>
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-II</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
 				</div>
 			</div>
 
-			<div class="practical-1__box">
-				<div class="practical-1__box--title">
-					<h1>Allied Mathematics - I</h1>
-					<p>Allied Paper</p>
-				</div>
-				<div class="practical-1__box--detail">
-					<div class="practical-1__box--detail-time">
-						<p><i class="far fa-clock"></i> 3 Hours</p>
-					</div>
-					<div class="practical-1__box--detail-person">
-						<p><i class="fas fa-user"></i> Miss. D. Saraswathi</p>
-					</div>
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-III</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
 				</div>
 			</div>
 		</div>
 
-		<div class="practical-1__row-2">
-			<div class="practical-1__box">
-				<div class="practical-1__box--title">
-					<h1>Digital practical Fundamentals</h1>
-					<p>Theory Paper</p>
-				</div>
-				<div class="practical-1__box--detail">
-					<div class="practical-1__box--detail-time">
-						<p><i class="far fa-clock"></i> 2 Hours</p>
-					</div>
-					<div class="practical-1__box--detail-person">
-						<p><i class="fas fa-user"></i> Mr. S. Mohanraj</p>
-					</div>
+		<div class="practical-1-subject-1__row-2">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-IV</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
 				</div>
 			</div>
 
-			<div class="practical-1__box">
-				<div class="practical-1__box--title">
-					<h1>Web Designing Concepts</h1>
-					<p>Programming Paper</p>
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-V</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
 				</div>
-				<div class="practical-1__box--detail">
-					<div class="practical-1__box--detail-time">
-						<p><i class="far fa-clock"></i> 3 Hours</p>
-					</div>
-					<div class="practical-1__box--detail-person">
-						<p><i class="fas fa-user"></i> Mrs. A. Josephine Sagaya Mala</p>
-					</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Practical subject unit 2 -->
+	<div class="practical-1-subject-1" id="practical-3-subject-2">
+		
+		<div class="practical-1-subject-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="practical-1-subject-1__title">
+			<h1>Units</h1>
+		</div>
+
+		<div class="practical-1-subject-1__row-1">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-I</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-II</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-III</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="practical-1-subject-1__row-2">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-IV</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-V</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Practical subject unit 3 -->
+	<div class="practical-1-subject-1" id="practical-3-subject-3">
+		
+		<div class="practical-1-subject-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="practical-1-subject-1__title">
+			<h1>Units</h1>
+		</div>
+
+		<div class="practical-1-subject-1__row-1">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-I</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-II</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-III</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="practical-1-subject-1__row-2">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-IV</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-V</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Practical subject unit 4 -->
+	<div class="practical-1-subject-1" id="practical-3-subject-4">
+		
+		<div class="practical-1-subject-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="practical-1-subject-1__title">
+			<h1>Units</h1>
+		</div>
+
+		<div class="practical-1-subject-1__row-1">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-I</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-II</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-III</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="practical-1-subject-1__row-2">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-IV</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-V</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- Practical subject unit 5 -->
+	<div class="practical-1-subject-1" id="practical-3-subject-5">
+		
+		<div class="practical-1-subject-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="practical-1-subject-1__title">
+			<h1>Units</h1>
+		</div>
+
+		<div class="practical-1-subject-1__row-1">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-I</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-II</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-III</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="practical-1-subject-1__row-2">
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-IV</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
+				</div>
+			</div>
+
+			<div class="practical-1-subject-1__box">
+				<div class="practical-1-subject-1__box--title">
+					<h1>Unit-V</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque dolorum totam labore explicabo enim nihil ab magnam quidem aspernatur.</p>
 				</div>
 			</div>
 		</div>
@@ -807,8 +1605,8 @@
 			<h1>Time Table</h1>
 		</div>
 		
-		<div class="timetable__years">
-			<div class="timetable__box">
+		<div class="timetable__years" id="timetable__years">
+			<div class="timetable__box timetable__box-1">
 				<div class="timetable__box--image timetable__box--image-1">
 					<h1>Year-I</h1>
 				</div>
@@ -817,7 +1615,7 @@
 				</div>
 			</div>
 
-			<div class="timetable__box">
+			<div class="timetable__box timetable__box-2">
 				<div class="timetable__box--image timetable__box--image-2">
 					<h1>Year-II</h1>
 				</div>
@@ -826,7 +1624,7 @@
 				</div>
 			</div>
 
-			<div class="timetable__box">
+			<div class="timetable__box timetable__box-3">
 				<div class="timetable__box--image timetable__box--image-3">
 					<h1>Year-III</h1>
 				</div>
@@ -836,6 +1634,988 @@
 			</div>
 		</div>
 	</section>
+
+
+	<!-- TimeTable menus -->
+
+	<div class="timetable-1" id="timetable-1">
+		
+		<div class="timetable-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="timetable-1__title">
+			<h1>Year-I</h1>
+		</div>
+
+		<div class="timetable-1__row-1">
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-1</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-2</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-3</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="timetable-1__row-2">
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-4</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-5</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-6</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="timetable-1" id="timetable-2">
+		
+		<div class="timetable-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="timetable-1__title">
+			<h1>Year-II</h1>
+		</div>
+
+		<div class="timetable-1__row-1">
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-1</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-2</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-3</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="timetable-1__row-2">
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-4</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-5</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-6</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="timetable-1" id="timetable-3">
+		
+		<div class="timetable-1__close-icon close__icon">
+			<i class="fas fa-times"></i>
+		</div>
+
+		<div class="timetable-1__title">
+			<h1>Year-III</h1>
+		</div>
+
+		<div class="timetable-1__row-1">
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-1</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-2</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-3</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="timetable-1__row-2">
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-4</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-5</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="timetable-1__box">
+				<div class="timetable-1__box--title">
+					<h1>Day Order-6</h1>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+				<div class="timetable-1__box--detail">
+					<div class="timetable-1__box--detail-time">
+						<h3><i class=""></i>Allied Mathematics-1</h3>
+						<p><i class="far fa-clock"></i> 9.00 AM to 9.45AM</p>
+					</div>
+					<div class="timetable-1__box--detail-person">
+						<p><i class="fas fa-user"></i> Mr. P.Karthik</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 
 
 	<!-- Google free Digital marketing Course -->

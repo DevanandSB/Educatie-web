@@ -6,43 +6,7 @@ const navIcon = document.getElementById('nav-icon');
 const menuItems = document.getElementById('menu-items');
 const navLinks = document.querySelectorAll('.navbar__link-item');
 
-// Subject list
 
-const closeIcon1 = document.querySelector('.computer-1__close-icon');
-const closeIcon2 = document.querySelector('.computer-2__close-icon');
-const closeIcon3 = document.querySelector('.computer-3__close-icon');
-
-
-const computer1List = document.getElementById('computer-1');
-const computer2List = document.getElementById('computer-2');
-const computer3List = document.getElementById('computer-3');
-
-const subjectBox1 = document.querySelector('.subject__box-1');
-const subjectBox2 = document.querySelector('.subject__box-2');
-const subjectBox3 = document.querySelector('.subject__box-3');
-
-
-
-
-// Practical close icons
-const closeIcon4 = document.querySelector('.practical-1__close-icon');
-const closeIcon5 = document.querySelector('.practical-2__close-icon');
-const closeIcon6 = document.querySelector('.practical-3__close-icon');
-
-const practical1List = document.getElementById('practical-1');
-const practical2List = document.getElementById('practical-2');
-const practical3List = document.getElementById('practical-3');
-
-const practicalBox1 = document.querySelector('.practical__box-1');
-const practicalBox2 = document.querySelector('.practical__box-2');
-const practicalBox3 = document.querySelector('.practical__box-3');
-
-
-
-
-
-
-// Navigation Bar
 navIcon.addEventListener('click', () => {
 	navIcon.classList.toggle('rotate');
 	menuItems.classList.toggle('hide-menu');
@@ -58,64 +22,189 @@ navLinks.forEach(item => {
 });
 
 
+// Close icons
+const computerCloseIcons = document.querySelectorAll('.close__icon');
+
 
 // Subject list
 
-subjectBox1.addEventListener('click', () => {
-	computer1List.classList.toggle('show-menu');
-});
+const computerList1 = document.getElementById('computer-1');
+const computerList2 = document.getElementById('computer-2');
+const computerList3 = document.getElementById('computer-3');
 
-subjectBox2.addEventListener('click', () => {
-	computer2List.classList.toggle('show-menu');
-});
+const subjectYears = document.getElementById('subject__years');
 
-subjectBox3.addEventListener('click', () => {
-	computer3List.classList.toggle('show-menu');
-});
+subjectYears.addEventListener('click', e => {
 
-
-closeIcon1.addEventListener('click', () => {
-	computer1List.classList.toggle('show-menu');
-});
-
-closeIcon2.addEventListener('click', () => {
-	computer2List.classList.toggle('show-menu');
-});
-
-closeIcon3.addEventListener('click', () => {
-	computer3List.classList.toggle('show-menu');
+	switch (e.target.parentNode.classList[1].split('-')[1]) {
+		case '1':
+			computerList1.classList.toggle('show-menu');
+			return;
+		case '2':
+			computerList2.classList.toggle('show-menu');
+			return;
+		case '3':
+			computerList3.classList.toggle('show-menu');
+			return;
+	}
 });
 
 
+// Practical list
 
-practicalBox1.addEventListener('click', () => {
-	practical1List.classList.toggle('show-menu');
+const practicalList1 = document.getElementById('practical-1');
+const practicalList2 = document.getElementById('practical-2');
+const practicalList3 = document.getElementById('practical-3');
+
+const practicalYears = document.getElementById('practical__years');
+
+
+practicalYears.addEventListener('click', e => {
+	
+	switch (e.target.parentNode.classList[1].split('-')[1]) {
+		case '1':
+			practicalList1.classList.toggle('show-menu');
+			return;
+		case '2':
+			practicalList2.classList.toggle('show-menu');
+			return;
+		case '3':
+			practicalList3.classList.toggle('show-menu');
+			return;
+	}
 });
 
-practicalBox2.addEventListener('click', () => {
-	practical2List.classList.toggle('show-menu');
+
+
+// Timetable lists
+
+const timeTableYears = document.getElementById('timetable__years');
+
+const timeTableList1 = document.getElementById('timetable-1');
+const timeTableList2 = document.getElementById('timetable-2');
+const timeTableList3 = document.getElementById('timetable-3');
+
+timeTableYears.addEventListener('click', e => {
+
+	switch (e.target.parentNode.classList[1].split('-')[1]) {
+		case '1':
+			timeTableList1.classList.toggle('show-menu');
+			return;
+		case '2':
+			timeTableList2.classList.toggle('show-menu');
+			return;
+		case '3':
+			timeTableList3.classList.toggle('show-menu');
+			return;
+	}
+})
+
+
+// Close icons for all menus
+
+computerCloseIcons.forEach(item => {
+	item.addEventListener('click', () => {
+		item.parentNode.classList.toggle('show-menu');
+	})
 });
 
-practicalBox3.addEventListener('click', () => {
-	practical3List.classList.toggle('show-menu');
+
+
+// Practical Unit list
+
+const practicalYearList1 = document.querySelectorAll('.practical-year-1');
+const practicalYearList2 = document.querySelectorAll('.practical-year-2');
+const practicalYearList3 = document.querySelectorAll('.practical-year-3');
+
+const practical1UnitList1 = document.getElementById('practical-1-subject-1');
+const practical1UnitList2 = document.getElementById('practical-1-subject-2');
+const practical1UnitList3 = document.getElementById('practical-1-subject-3');
+const practical1UnitList4 = document.getElementById('practical-1-subject-4');
+const practical1UnitList5 = document.getElementById('practical-1-subject-5');
+
+practicalYearList1.forEach(item => {
+	item.addEventListener('click', () => {
+		switch(item.classList[2].split('-')[3]) {
+
+			case '1':
+				practical1UnitList1.classList.toggle('show-menu');
+				break;
+			case '2':
+				practical1UnitList2.classList.toggle('show-menu');
+				break;
+			case '3':
+				practical1UnitList3.classList.toggle('show-menu');
+				break;
+			case '4':
+				practical1UnitList4.classList.toggle('show-menu');
+				break;
+			case '5':
+				practical1UnitList5.classList.toggle('show-menu');
+				break;
+		}
+		
+	})
+});
+
+
+const practical2UnitList1 = document.getElementById('practical-2-subject-1');
+const practical2UnitList2 = document.getElementById('practical-2-subject-2');
+const practical2UnitList3 = document.getElementById('practical-2-subject-3');
+const practical2UnitList4 = document.getElementById('practical-2-subject-4');
+const practical2UnitList5 = document.getElementById('practical-2-subject-5');
+
+practicalYearList2.forEach(item => {
+	item.addEventListener('click', () => {
+		switch(item.classList[2].split('-')[3]) {
+
+			case '1':
+				practical2UnitList1.classList.toggle('show-menu');
+				break;
+			case '2':
+				practical2UnitList2.classList.toggle('show-menu');
+				break;
+			case '3':
+				practical2UnitList3.classList.toggle('show-menu');
+				break;
+			case '4':
+				practical2UnitList4.classList.toggle('show-menu');
+				break;
+			case '5':
+				practical2UnitList5.classList.toggle('show-menu');
+				break;
+		}
+		
+	})
 });
 
 
 
+const practical3UnitList1 = document.getElementById('practical-3-subject-1');
+const practical3UnitList2 = document.getElementById('practical-3-subject-2');
+const practical3UnitList3 = document.getElementById('practical-3-subject-3');
+const practical3UnitList4 = document.getElementById('practical-3-subject-4');
+const practical3UnitList5 = document.getElementById('practical-3-subject-5');
 
-closeIcon4.addEventListener('click', () => {
-	// console.log(e.target);
-	practical1List.classList.toggle('show-menu');
+practicalYearList3.forEach(item => {
+	item.addEventListener('click', () => {
+		switch(item.classList[2].split('-')[3]) {
+
+			case '1':
+				practical3UnitList1.classList.toggle('show-menu');
+				break;
+			case '2':
+				practical3UnitList2.classList.toggle('show-menu');
+				break;
+			case '3':
+				practical3UnitList3.classList.toggle('show-menu');
+				break;
+			case '4':
+				practical3UnitList4.classList.toggle('show-menu');
+				break;
+			case '5':
+				practical3UnitList5.classList.toggle('show-menu');
+				break;
+		}
+		
+	})
 });
-
-closeIcon5.addEventListener('click', () => {
-	// console.log(e.target);
-	practical2List.classList.toggle('show-menu');
-});
-
-closeIcon6.addEventListener('click', () => {
-	// console.log(e.target);
-	practical3List.classList.toggle('show-menu');
-});
-
-//Is this Correct?
