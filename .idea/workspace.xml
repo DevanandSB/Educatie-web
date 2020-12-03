@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a4ba97b-1403-41a8-a361-c8e6dce4a00a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/timetable-1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/timetable-2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/timetable-3.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4a4ba97b-1403-41a8-a361-c8e6dce4a00a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +25,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -45,6 +41,7 @@
       <workItem from="1604202823209" duration="292000" />
       <workItem from="1604582747097" duration="6577000" />
       <workItem from="1604589424233" duration="209000" />
+      <workItem from="1606983443380" duration="614000" />
     </task>
     <task id="LOCAL-00001" summary="Updated UI">
       <created>1604582936363</created>
